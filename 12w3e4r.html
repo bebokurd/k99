@@ -1,28 +1,31 @@
+<head>
+  <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
 
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+</head>
 
-<link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/demo.css" />
-<style>
-     #videocontainer {
-        height: 100vh;
-        width: 100vw;
-        display: none;
-    }
-</style>
+<body>
+  <video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="https://cdn.jwplayer.com/videos/qx7WmdqO-pkWSzBGr.mp4" type="video/mp4" />
+    <source src="https://cdn.jwplayer.com/videos/qx7WmdqO-GkDTvZRp.mp4" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
 
-<video controls crossorigin playsinline data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
-
-<source src="https://cdn.jwplayer.com/videos/qx7WmdqO-SvLHu0Jx.mp4" type="video/mp4" size="576" />
-<source src="https://cdn.jwplayer.com/videos/qx7WmdqO-pkWSzBGr.mp4" type="video/mp4" size="720" />
-<source src="https://cdn.jwplayer.com/videos/qx7WmdqO-GkDTvZRp.mp4" type="video/mp4" size="1080" />
-
-<track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default />
-<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt" />
-
-<a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
-</video>
-</div>
-<ul>
-<li class="plyr__cite plyr__cite--video" hidden>
-<script src="https://cdn.plyr.io/3.6.12/demo.js" crossorigin="anonymous"></script>
-
-<small>
+  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+</body>
