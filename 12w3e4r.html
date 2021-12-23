@@ -1,38 +1,26 @@
-<head>
-  <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css" />
 
-  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-</head>
-<style>
 
- #videocontainer {
-        height: 100vh;
-        width: 100vw;
-        display: none;
-    }
-</style>
-
-<body>
-  <video
-    id="my-video"
-    class="video-js"
-    controls
-    preload="auto"
-   
-    poster="MY_VIDEO_POSTER.jpg"
-    data-setup="{}"
-  >
-    <source src="https://cdn.jwplayer.com/videos/qx7WmdqO-pkWSzBGr.mp4" type="video/mp4" />
-    <source src="https://cdn.jwplayer.com/videos/qx7WmdqO-GkDTvZRp.mp4" type="video/webm" />
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank"
-        >supports HTML5 video</a
-      >
-    </p>
+<!--Add a Simple HTML5 Video tag-->
+  <video controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" class="vid1">
+    <!-- Video files -->
+    <source src="https://rebrand.ly/sample-video" type="video/mp4" size="576" />
   </video>
 
-  <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
-</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+<style>
+ :root {
+  --plyr-color-main: #FEED01;
+}
+</style>
+
+<script>
+  const player = new Plyr('.vid1');
+ 
+  
+</script>
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.css" />
